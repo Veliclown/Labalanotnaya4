@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Library";
+}
+
+<h2>Список книг</h2>
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>@book</li>
+    }
+</ul>

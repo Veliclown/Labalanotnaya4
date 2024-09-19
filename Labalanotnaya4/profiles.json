@@ -1,0 +1,39 @@
+{
+  "Profiles": {
+    "0": {
+      "Name": "Alegodrem",
+      "Age": "25",
+      "Email": "user0@gmail.com"
+    },
+    "1": {
+      "Name": "Tom Radel",
+      "Age": "30",
+      "Email": "user1@gmail.com"
+    },
+    "2": {
+      "Name": "Alexander Gordienko",
+      "Age": "28",
+      "Email": "user2@gmail.com"
+    },
+    "3": {
+      "Name": "Nikolas Flamel",
+      "Age": "22",
+      "Email": "user3gmail.com"
+    },
+    "4": {
+      "Name": "Kirill Mandra",
+      "Age": "35",
+      "Email": "user4@gmail.com"
+    },
+    "5": {
+      "Name": "Nikita Chuprin",
+      "Age": "40",
+      "Email": "user5@gmail.com"
+    },
+    "currentUser": {
+      "Name": "YOU",
+      "Age": "27",
+      "Email": "currentuser@gmail.com"
+    }
+  }
+}
