@@ -2,14 +2,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<LibraryService>();
 
 builder.Configuration
     .AddJsonFile("books.json", optional: true, reloadOnChange: true)
     .AddJsonFile("profiles.json", optional: true, reloadOnChange: true);
 
-builder.Services.AddSingleton<LibraryService>();
+
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -27,7 +29,12 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "library",
+    pattern: "Library/{action=Index}/{id?}");
+    
+
+app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Library}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
